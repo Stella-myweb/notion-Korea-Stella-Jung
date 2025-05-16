@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stella Jung - Account Executive Application for Notion</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #000;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+        .notion-color {
+            color: #000;
+        }
+        .notion-bg {
+            background: linear-gradient(135deg, #ffffff 0%, #000000 100%);
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .section-title:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 70px;
+            background: #000;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ffffff 0%, #000000 100%);
+        }
+        .timeline-item:after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 17px;
+            bottom: -20px;
+            width: 2px;
+            background: #e0e0e0;
+        }
+        .timeline-item:last-child:after {
+            display: none;
+        }
+        .bg-pink-light {
+            background-color: #FFF6F5;
+        }
+        .bg-blue-light {
+            background-color: #F0F7FF;
+        }
+        .bg-yellow-light {
+            background-color: #FFFBEB;
+        }
+        .bg-green-light {
+            background-color: #F0F9F4;
+        }
+        @media print {
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="w-full py-6 bg-white shadow-sm print:shadow-none">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="w-full md:w-auto mb-4 md:mb-0 flex items-center">
+                    <div class="w-16 h-16 mr-4 notion-bg rounded-full flex items-center justify-center">
+                        <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center">
+                            <span class="text-2xl font-bold notion-color">SJ</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-800">Stella Jung</h1>
+                        <p class="text-lg text-gray-600">Future Notino | Account Executive</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-auto">
+                    <div class="flex flex-col md:flex-row md:items-center">
+                        <a href="mailto:stella.cholong.jung@gmail.com" class="mb-2 md:mb-0 md:mr-4 text-gray-600 hover:text-gray-800 flex items-center">
+                            <i class="fas fa-envelope mr-2 text-gray-500"></i>
+                            stella.cholong.jung@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/stellacholongjung/" target="_blank" class="text-gray-600 hover:text-gray-800 flex items-center">
+                            <i class="fab fa-linkedin mr-2 text-gray-500"></i>
+                            LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        <nav class="mb-12 pb-4 border-b border-gray-200">
+            <ul class="flex flex-wrap">
+                <li class="mr-6 mb-2"><a href="#profile" class="text-gray-600 hover:notion-color">Profile</a></li>
+                <li class="mr-6 mb-2"><a href="#why-notion" class="text-gray-600 hover:notion-color">Why Notion?</a></li>
+                <li class="mr-6 mb-2"><a href="#experience" class="text-gray-600 hover:notion-color">Experience</a></li>
+                <li class="mr-6 mb-2"><a href="#education" class="text-gray-600 hover:notion-color">Education</a></li>
+                <li class="mr-6 mb-2"><a href="#skills" class="text-gray-600 hover:notion-color">Skills</a></li>
+                <li class="mr-6 mb-2"><a href="#event-participation" class="text-gray-600 hover:notion-color">Event Participation</a></li>
+                <li class="mr-6 mb-2"><a href="#cover-letter" class="text-gray-600 hover:notion-color">Cover Letter</a></li>
+                <li class="mr-6 mb-2"><a href="#project" class="text-gray-600 hover:notion-color">Project</a></li>
+            </ul>
+        </nav>
+
+        <!-- Profile Section -->
+        <section id="profile" class="mb-12">
+            <h2 class="text-2xl font-bold section-title mb-6">Profile</h2>
+            <div class="bg-pink-light p-6 rounded-lg shadow-sm">
+                <p class="text-gray-800">
+                    (Korean/English) Entrepreneurial Sales Professional with 10+ years in enterprise technology and business development. Proven track record of 20% conversion rates and strategic relationship building across APAC. Currently enhancing AI technical proficiency through intensive training in deep learning, LLMs, and generative AI applications to better understand and communicate technology solutions.
+                </p>
+            </div>
+        </section>
+
+        <!-- Why Notion Section -->
+        <section id="why-notion" class="mb-12">
+            <h2 class="text-2xl font-bold section-title mb-6">Why do you want to work at Notion?</h2>
+            <div class="bg-blue-light p-6 rounded-lg shadow-sm">
+                <p class="text-gray-800 mb-4">
+                    Notion has transformed how I organize my life. As someone who spends more time in Notion than YouTube, I've experienced firsthand how it creates clarity from chaos. My motivation to join Notion stems from three core beliefs:
+                </p>
+                <div class="mb-4">
+                    <p class="font-semibold mb-1">1. Notion solves a universal problem</p>
+                    <p class="text-gray-800 ml-5">
+                        Information fragmentation is a universal challenge. Notion elegantly solves this by creating a single space where everything that matters can live and evolve. This isn't just software—it's a transformational tool that changes how people think and work.
+                    </p>
+                </div>
+                <div class="mb-4">
+                    <p class="font-semibold mb-1">2. Korea is the perfect next market</p>
+                    <p class="text-gray-800 ml-5">
+                        Korean businesses face unique productivity challenges with hierarchical structures requiring seamless information flow. Notion's flexibility perfectly addresses these needs. I've witnessed Korean companies struggle with disconnected tools, creating an ideal opportunity for Notion's all-in-one workspace.
+                    </p>
+                </div>
+                <div>
+                    <p class="font-semibold mb-1">3. Building foundational sales motion</p>
+                    <p class="text-gray-800 ml-5">
+                        Being part of Notion's founding sales team in Korea represents the rare opportunity to help shape how an exceptional product is introduced to a new market. I'm energized by the challenge of developing sales strategies and building the Korean market from the ground up with a product I genuinely believe in.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-12">
+            <h2 class="text-2xl font-bold section-title mb-6">Experience</h2>
+            
+            <div class="timeline-item">
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold">Senior Business Development Representative - Korea</h3>
+                    <p class="text-gray-600 italic">Brightcove (a fast-growing SaaS company) | July 2022 – March 2025 (2 yrs 9 mons)</p>
+                </div>
+                <ul class="list-disc ml-4 text-gray-800">
+                    <li>Achieved industry-leading 20% conversion rate from inbound leads to new business contracts in 2024, setting record-high performance globally</li>
+                    <li>Earned Global Top BDR recognition for 2023 and 2024 through exceptional customer relationship management and strategic account planning</li>
+                    <li>Built the Korean market from scratch with limited marketing resources by personally translating the entire website with SEO-optimized Korean content</li>
+                    <li>Collaborated with Sales Engineering team to devise and execute account strategies for mid-market and enterprise clients, emphasizing long-term value creation</li>
+                    <li>Drove the complete sales cycle from prospecting to qualified opportunity, partnering with account executives to ensure smooth transition to deal closure</li>
+                    <li>Created intuitive demonstrations that helped non-technical decision makers understand complex products through compelling presentations</li>
+                    <li>Attended 10+ industry exhibitions without booth support in 2024, generating 15+ follow-up meetings at each event through creative outreach</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold">Sales Development Representative/ Business Development Executive - APAC</h3>
+                    <p class="text-gray-600 italic">IDG (International Data Group) | December 2018 - July 2022 – Korea / March 2018 -December 2018 – Dublin, Ireland – Totally 4 yrs 5 mons</p>
+                </div>
+                <ul class="list-disc ml-4 text-gray-800">
+                    <li>Built strategic enterprise relationships across APAC region</li>
+                    <li>Led strategic cybersecurity project targeting Korean government agencies, developing relationships with security and data management decision makers</li>
+                    <li>Created campaigns that helped non-technical decision makers understand complex products through compelling presentations and customized use cases</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold">Business Development Representative(Remote - Contracted by IDG) – Korea</h3>
+                    <p class="text-gray-600 italic">Forcepoint | September 2020 - March 2021 – Korea – Totally 8 mons</p>
+                </div>
+                <ul class="list-disc ml-4 text-gray-800">
+                    <li>Expanded business throughout APAC with regional directors</li>
+                    <li>Developed opportunities for cybersecurity solutions in enterprise accounts</li>
+                </ul>
+                <p class="text-gray-500 italic text-sm mt-2">Note: Forcepoint role was performed under contract with IDG during the same employment period</p>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold">Sales Operations Executive - Korea</h3>
+                    <p class="text-gray-600 italic">USCO ITR | July 2013 - November 2017</p>
+                </div>
+                <ul class="list-disc ml-4 text-gray-800">
+                    <li>Built deep relationships with clients across North America, Italy and India, demonstrating successful work in multiple countries and cultures</li>
+                    <li>Accessed, analyzed, and synthesized financial data to develop accurate business forecasting</li>
+                    <li>Managed invoice generation, tracking, and collection processes with a strong analytical foundation</li>
+                    <li>Streamlined invoice processes and international payment reconciliation</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-12">
+            <h2 class="text-2xl font-bold section-title mb-6">Education</h2>
+            
+            <div class="mb-6 bg-yellow-light p-4 rounded-lg">
+                <h3 class="text-xl font-semibold">AI Language Master Program</h3>
+                <p class="text-gray-600 italic">ICT Innovation Square - Information Technology, Programming (March 2025 - May 2025 – 3 months)</p>
+                <ul class="list-disc ml-4 text-gray-800 mt-2">
+                    <li>Intensive evening program (160 hours, 7PM-11PM weekdays) operated by National IT Industry Promotion Agency</li>
+                    <li>Focus areas: Python programming, regression analysis, TensorFlow, Keras deep learning frameworks, and data visualization</li>
+                    <li>Project work includes building LLM applications, RAG systems, and implementing OpenAI API for business solutions</li>
+                    <li>Developing technical competency to better understand enterprise AI challenges and articulate business value of AI solutions</li>
+                </ul>
+            </div>
+            
+            <div class="mb-6 bg-yellow-light p-4 rounded-lg">
+                <h3 class="text-xl font-semibold">Smart Factory IT Programming Bootcamp</h3>
+                <p class="text-gray-600 italic">Information Technology, Programming (2021 – 3 months)</p>
+            </div>
+            
+            <div class="mb-6 bg-yellow-light p-4 rounded-lg">
+                <h3 class="text-xl font-semibold">Cheongju University</h3>
+                <p class="text-gray-600 italic">Bachelor's Degree (2007-2012)</p>
+                <ul class="list-disc ml-4 text-gray-800 mt-2">
+                    <li>Tourism Management</li>
+                    <li>Japanese Language and Literature (Dual Major)</li>
+                </ul>
+            </div>
+            
+            <div class="mb-6 bg-yellow-light p-4 rounded-lg">
+                <h3 class="text-xl font-semibold">Licenses & Certifications</h3>
+                <p class="text-gray-800 mt-2">ChatGPT and AI 100% Business Implementation (2024 – 15 hours)</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-12">
+            <h2 class="text-2xl font-bold section-title mb-6">Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-green-light p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2 notion-color">Sales Expertise</h3>
+                    <ul class="text-gray-800">
+                        <li>Strategic Account Planning</li>
+                        <li>Pipeline Development</li>
+                        <li>Value-Based Selling</li>
+                        <li>Pre-Sales Support</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-light p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2 notion-color">Technical Understanding</h3>
+                    <ul class="text-gray-800">
+                        <li>SaaS & Cloud Solutions</li>
+                        <li>AI Models</li>
+                        <li>Data Management</li>
+                        <li>Deep Learning</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-light p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2 notion-color">Communication</h3>
+                    <ul class="text-gray-800">
+                        <li>Multi-lingual Client Engagement</li>
+                        <li>Executive Presentations</li>
+                        <li>Solution Storytelling</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-light p-4 rounded-lg md:col-span-3">
+                    <h3 class="font-semibold mb-2 notion-color">Industry Knowledge</h3>
+                    <ul class="text-gray-800 flex flex-wrap">
+                        <li class="mr-6">B2B Enterprise Software</li>
+                        <li class="mr-6">AI Applications</li>
+                        <li class="mr-6">Productivity Solutions</li>
+                        <li>Manufacturing Industry Experience</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-4 bg-green-light p-4 rounded-lg">
+                <h3 class="font-semibold mb-2">Abilities</h3>
+                <ul class="list-disc ml-4 text-gray-800">
+                    <li>Written and Verbal Communication: Excellent skills in Korean (native) and English (professional)</li>
+                    <li>Adaptability: Thrives in ambiguous situations, developing creative solutions to unprecedented challenges</li>
+                    <li>Relationship Building: Remains calm when facing criticism while celebrating partners' successes</li>
+                    <li>Executive Engagement: Experience presenting complex technical concepts to senior business and IT leaders</li>
+                    <li>Collaboration: Thrives in collaborative environments, building consensus across diverse stakeholders</li>
+                    <li>Personal Tool Proficiency: Advanced Notion user, utilizing it as a primary productivity and knowledge management system</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Event Participation Section -->
+        <section id="event-participation" class="mb-12">
+            <h2 class="text-2xl font-bold section-title mb-6">Event Participation & Business Development</h2>
+            
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                <p class="text-gray-700 mb-4">
+                    Successfully participated in 10+ industry events annually, including TAS 2024, ROBO World 2024, Conext Korea 2024, DMTS 2024, BCWW 2024, Contents Korea 2024, and EduTech Korea (2024/2025), delivering tangible business results:
+                </p>
+                
+                <ul class="list-disc ml-4 text-gray-700">
+                    <li>Conducted in-depth potential client analysis across diverse industries, identifying key pain points and mapping solutions to specific business challenges</li>
+                    <li>Developed comprehensive post-event reports with detailed competitive analysis and strategic recommendations for engagement</li>
+                    <li>Established valuable industry connections through active networking, resulting in 15+ follow-up meetings with qualified prospects</li>
+                    <li>Created customized solution proposals addressing specific technical requirements and business objectives identified during events</li>
+                    <li>Implemented multi-stage engagement strategies (short/mid/long-term) tailored to each prospect's implementation timeline and organizational readiness</li>
+                    <li>Converted event contacts into sales pipeline opportunities by effectively communicating value propositions and ROI potential to key stakeholders</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Cover Letter Section -->
+        <section id="cover-letter" class="mb-12">
+            <h2 class="text-2xl font-bold section-title mb-6">Cover Letter</h2>
+            
+            <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                <p class="mb-4 font-semibold">Dear Hiring Manager,</p>
+                
+                <p class="mb-4 text-gray-800">
+                    I am applying for the Account Executive position at Notion with great enthusiasm. As a sales professional with 10+ years in enterprise technology and a dedicated Notion power user myself, I believe I can contribute significantly to Notion's growth in the Korean market as part of your founding sales team.
+                </p>
+                
+                <p class="mb-4 text-gray-800">
+                    I'm impressed by how Notion has revolutionized collaborative workspaces and productivity. Your platform has become my second brain - I actually spend more time using Notion than YouTube, organizing everything from my current work projects to my AI studies and language learning.
+                </p>
+                
+                <p class="mb-2 text-gray-800">
+                    At Brightcove, a fast-growing software company, I've demonstrated excellence in building new markets by:
+                </p>
+                <ul class="list-disc ml-8 mb-4 text-gray-800">
+                    <li>Achieving <strong>20% conversion rates</strong> and <strong>recognition as Global Top BDR (2023-2024)</strong></li>
+                    <li><strong>Building the Korean market from scratch</strong> with limited marketing resources by personally translating the entire website with SEO-optimized Korean content</li>
+                    <li><strong>Attending 10+ industry exhibitions without booth support</strong> in 2024, generating 15+ follow-up meetings at each event through creative outreach</li>
+                    <li>Reviving dormant leads via strategic LinkedIn outreach with personalized industry insights, converting them to closed deals</li>
+                    <li>Creating intuitive demonstrations that helped non-technical decision makers understand complex products through compelling presentations</li>
+                </ul>
+                
+                <p class="mb-4 text-gray-800">
+                    My time at IDG taught me to effectively communicate the value of innovative technology solutions. I created campaigns that helped non-technical decision makers understand complex products through compelling presentations and customized use cases.
+                </p>
+                
+                <p class="mb-4 text-gray-800">
+                    I understand Notion's challenge - people need to experience it to truly see its value. At Brightcove, I addressed this by creating tailored product demos showing specific business impacts - a strategy I'll apply to drive Notion's growth in Korea.
+                </p>
+                
+                <p class="mb-4 text-gray-800">
+                    Korea is ideal for Notion, especially among tech companies and teams seeking increased collaboration, transparency, and productivity. With my track record of exceeding quotas, building markets from scratch, and personal enthusiasm for Notion, I'm ready to help establish it as an essential tool for Korean businesses.
+                </p>
+                
+                <p class="mb-4 text-gray-800">
+                    I'm excited to bring my entrepreneurial spirit to your new Korean market team.
+                </p>
+                
+                <p class="mb-1 text-gray-800">Sincerely,</p>
+                <p class="text-gray-800 font-semibold">Stella Jung</p>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="project" class="mb-12">
+            <h2 class="text-2xl font-bold section-title mb-6">Project: AI Marketing Booster</h2>
+            
+            <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                <h3 class="text-xl font-bold mb-4 notion-color">AI Marketing Booster</h3>
+                <p class="mb-4"><a href="https://ai-marketing-booster.streamlit.app/" target="_blank" class="notion-color hover:underline">Live Demo: https://ai-marketing-booster.streamlit.app/</a></p>
+                
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold mb-2">Problem Statement: Digital Marketing Challenges for Small Business Owners</h4>
+                    <ul class="list-disc ml-4 text-gray-700">
+                        <li>Time Constraints: Insufficient time to create quality marketing content</li>
+                        <li>Expertise Gap: Lack of knowledge in effective marketing content creation</li>
+                        <li>High Costs: Financial burden when relying on external marketing agencies</li>
+                        <li>Real-world Case: Diagnostic results show most small business owners remain at "Basic Level" on digital platforms</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold mb-2">AI Marketing Booster Service</h4>
+                    <ul class="list-disc ml-4 text-gray-700">
+                        <li>Target Audience: Small business owners unfamiliar with digital marketing</li>
+                        <li>Goal: Enhance online visibility and increase revenue through platform optimization</li>
+                        <li>Key Features:
+                            <ul class="list-circle ml-4">
+                                <li>Intuitive UI/UX built with Streamlit</li>
+                                <li>AI-powered automated diagnostics</li>
+                                <li>Customized action plans</li>
+                                <li>Optimization strategies for digital storefronts</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold mb-2">AI-Based Marketing Diagnostic System</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h5 class="font-semibold mb-2 notion-color">Self-Diagnostic Tool</h5>
+                            <ul class="list-disc ml-4 text-gray-700">
+                                <li>Comprehensive assessment through 20 questions across 5 areas</li>
+                                <li>User-friendly interface with progress indicators</li>
+                                <li>Analysis of scores by category to identify improvement areas</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h5 class="font-semibold mb-2 notion-color">Deep Learning RAG Model-Based Customized Reports</h5>
+                            <ul class="list-disc ml-4 text-gray-700">
+                                <li>Utilizes Retrieval-Augmented Generation (RAG) with deep learning neural networks</li>
+                                <li>Implements transformer-based architecture for semantic understanding</li>
+                                <li>Employs deep learning vector embeddings for accurate content matching</li>
+                                <li>Provides optimization level assessment powered by neural language processing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <a href="https://ai-marketing-booster.streamlit.app/" target="_blank" class="inline-block px-6 py-3 bg-black text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        Visit Project Demo <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-4 text-white text-center">
+        <div class="max-w-5xl mx-auto px-4">
+            <p>© 2025 Stella Jung. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
